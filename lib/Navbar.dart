@@ -43,7 +43,7 @@ class DeskTopNav extends StatelessWidget {
              SizedBox(
               width: 20,
             ),
-              Text("Sign Up",style: TextStyle(color:Colors.white),),
+              Text("Sign In",style: TextStyle(color:Colors.white),),
               SizedBox(
               width: 20,
             ),
@@ -81,7 +81,7 @@ class MobileNav extends StatelessWidget {
                SizedBox(
                 width: 20,
               ),
-                Text("Sign Up",style: TextStyle(color:Colors.white),),
+                Text("Sign In",style: TextStyle(color:Colors.white),),
                 SizedBox(
                 width: 20,
               ),
