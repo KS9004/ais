@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'My_First_Page',
+      title: 'Automated Irrigation System',
       theme: ThemeData(fontFamily: "Gentium"),
       home: HomePage(),
     );
@@ -23,9 +23,9 @@ class HomePage extends StatelessWidget {
       body: Container(
         decoration: BoxDecoration(
           gradient:LinearGradient(
-            begin: Alignment.centerLeft,
-            end:Alignment.centerRight,
-            colors: [Color.fromARGB(243, 44, 79, 1),Color.fromARGB(59, 67,113 , 1)],
+            begin: Alignment.centerRight,
+            end:Alignment.centerLeft,
+            colors: [Color.fromRGBO(28, 31, 52, 1),Color.fromRGBO(6, 139, 255, 1)],
           ),
         ),
       child: Column(children: [
@@ -41,3 +41,4 @@ class HomePage extends StatelessWidget {
     }
 }
 
+//[Color.fromARGB(28, 31, 52, 1),Color.fromARGB(6, 139, 255, 1)]

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ais/constant.dart';
 
 
 class NavBar extends StatelessWidget {
@@ -29,35 +30,37 @@ class DeskTopNav extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-          Text("Automatic Irrigation System",style: TextStyle(
-            fontWeight:FontWeight.bold,color:Colors.white,fontSize:30,
-       
-          ),
-          ),
-          Row(children: [
-            Text("Home",style: TextStyle(color:Colors.white),),
-            SizedBox(
-              width: 20,
+            Text("Automatic Irrigation System",style: TextStyle(
+              fontWeight:FontWeight.bold,color:Colors.white,fontSize:30,
+
             ),
-             Text("About Us",style: TextStyle(color:Colors.white),),
-             SizedBox(
-              width: 20,
             ),
+            Row(children: [
+              Text("Home",style: TextStyle(color:Colors.white),),
+              SizedBox(
+                width: sizedBoxWidth,
+              ),
+              Text("About Us",style: TextStyle(color:Colors.white),),
+              SizedBox(
+                width: sizedBoxWidth,
+              ),
               Text("Sign In",style: TextStyle(color:Colors.white),),
               SizedBox(
-              width: 20,
-            ),
-             MaterialButton(onPressed: (){},
-             color: Colors.pink,
-             shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(30.0))),
-             child: Text("Get Started",style: TextStyle(color: Colors.white),), 
-             ),
-          ],)
-        ],),
+                width: sizedBoxWidth,
+              ),
+              MaterialButton(onPressed: (){},
+                color: Colors.pink,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(30.0))),
+                child: Text("Get Started",style: TextStyle(color: Colors.white),),
+              ),
+            ],)
+          ],),
       ),
     );
   }
 }
+
+
 class MobileNav extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -97,3 +100,4 @@ class MobileNav extends StatelessWidget {
     );
   }
 }
+

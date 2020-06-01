@@ -30,8 +30,9 @@ List<Widget> pageChildren(double width){
             onPressed: (){},
             child: Padding(
               padding: const EdgeInsets.symmetric(vertical: 20.0,horizontal: 40.0),
-              child: Text("Tutorials",style: TextStyle(
+              child: Text("Know more",style: TextStyle(
                 color:Colors.red,
+                fontSize: 20.0,
               ),),
             ),
           ),
