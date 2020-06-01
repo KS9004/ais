@@ -23,7 +23,7 @@ List<Widget> pageChildren(double width){
             ),),
           ),
           MaterialButton(
-            color:Colors.white,
+            color:Color.fromRGBO(28, 31, 52, 0.5),
             shape:RoundedRectangleBorder(
               borderRadius: BorderRadius.all(Radius.circular(20.0))
             ),
@@ -31,13 +31,13 @@ List<Widget> pageChildren(double width){
             child: Padding(
               padding: const EdgeInsets.symmetric(vertical: 20.0,horizontal: 40.0),
               child: Text("Know more",style: TextStyle(
-                color:Colors.red,
+                color:Colors.white,
                 fontSize: 20.0,
               ),),
             ),
           ),
         ],
-      
+
     ),
      ),
      
@@ -51,11 +51,10 @@ List<Widget> pageChildren(double width){
          fit: BoxFit.cover,
        ),
        borderRadius: BorderRadius.all(Radius.circular(20.0)),
-      
        ),
-     )
-
+     ),
   ];
+
 }
   @override
   Widget build(BuildContext context) {

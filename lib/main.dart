@@ -1,3 +1,4 @@
+import 'package:ais/bottomLanding_page.dart';
 import 'package:flutter/material.dart';
 import 'package:ais/Landing_page.dart';
 import 'package:ais/Navbar.dart';
@@ -34,6 +35,10 @@ class HomePage extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 20.0,horizontal: 40.0),
         child: LandingPage(),
       ),
+        Padding(
+          padding: const EdgeInsets.only(top: 80.0),
+          child: BottonLandingPage(),
+        ),
       ],),
       ),
         );
