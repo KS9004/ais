@@ -2,6 +2,7 @@ import 'package:ais/bottomLanding_page.dart';
 import 'package:flutter/material.dart';
 import 'package:ais/Landing_page.dart';
 import 'package:ais/Navbar.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 
 void main() {
   runApp(MyApp());
@@ -29,17 +30,32 @@ class HomePage extends StatelessWidget {
             colors: [Color.fromRGBO(28, 31, 52, 1),Color.fromRGBO(6, 139, 255, 1)],
           ),
         ),
-      child: Column(children: [
-      NavBar(),
-      Padding(
-        padding: const EdgeInsets.symmetric(vertical: 20.0,horizontal: 40.0),
-        child: LandingPage(),
-      ),
+
+      child:  Column(children: [
+        NavBar(),
         Padding(
-          padding: const EdgeInsets.only(top: 80.0),
-          child: BottonLandingPage(),
+          padding: const EdgeInsets.symmetric(vertical: 20.0,horizontal: 40.0),
+          child: Column(
+            children: [
+              LandingPage(),
+
+             ScreenTypeLayout(
+               desktop:Padding(
+                 padding: const EdgeInsets.only(top: 80.0),
+                 child: BottonLandingPage(),
+               ) ,
+               mobile: Padding(
+                 padding: const EdgeInsets.only(top: 20.0),
+                 child: BottonLandingPage(),
+               ),
+             ) ,
+
+            ],
+          ),
         ),
-      ],),
+        ],),
+
+
       ),
         );
     

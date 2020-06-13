@@ -1,20 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:ais/constant.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 
 
 class NavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return LayoutBuilder(
-      builder: (context,constraints){
-        if(constraints.maxWidth>1600){
-          return DeskTopNav();
-        }else if(constraints.maxWidth>800 && constraints.maxWidth<1600){
-          return DeskTopNav();
-        }else{
-          return MobileNav();
-        }
-      },
+    return ScreenTypeLayout(
+      desktop: DeskTopNav(),
+      mobile: MobileNav(),
     );
   }
 }
@@ -101,3 +95,14 @@ class MobileNav extends StatelessWidget {
   }
 }
 
+//LayoutBuilder(
+//builder: (context,constraints){
+//if(constraints.maxWidth>1600){
+//return DeskTopNav();
+//}else if(constraints.maxWidth>800 && constraints.maxWidth<1600){
+//return DeskTopNav();
+//}else{
+//return MobileNav();
+//}
+//},
+//);
